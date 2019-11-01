@@ -30,7 +30,7 @@ namespace Medisut.Repository
 
         public DataTable Get(int id)
         {
-            DataSet ds = db.ExecuteDataSet("spBuscarProducto", id);
+            DataSet ds = db.ExecuteDataSet("spConsultarDescuentoMes", id);
             if (ds.Tables.Count > 0)
             {
                 return ds.Tables[0];

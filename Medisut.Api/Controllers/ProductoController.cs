@@ -26,6 +26,7 @@ namespace Medisut.Api.Controllers
             return JsonConvert.SerializeObject(repo.Get(id));
         }
 
+        [Route("api/producto/{date:alpha}")]
         public string Get(string date)
         {
             return "value date";
